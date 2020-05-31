@@ -1,7 +1,7 @@
 
 
 import os
-import django_heroku
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +23,7 @@ ALLOWED_HOSTS = ['myeurusapp.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
-    'Eurus.apps.BlogConfig',
+    'Eurus.apps.EurusConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
     'django.contrib.admin',
@@ -141,4 +141,3 @@ AWS_DEFAULT_ACL = None
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-django_heroku.settings(locals())
