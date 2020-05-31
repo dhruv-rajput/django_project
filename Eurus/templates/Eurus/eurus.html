@@ -1,0 +1,13 @@
+{% extends "Eurus/base.html" %}
+{% block content %}
+  <h1>Aloha!</h1>
+  <h2>Welcome At Eurus.</h2>
+  <h4>Here at Eurus we provide you with latest movies and series recommendations
+  	without spoilers. </h4>
+   {% if user.is_authenticated %}
+      <p><a class="btn btn-success" href="{% url 'post-create' %}">Review Now</a></p>
+   {% else %}
+      <p><a class="btn btn-info" href="{% url 'register' %}">Sign Up </a> </p>  
+   {% endif %}
+
+{% endblock content %}   
