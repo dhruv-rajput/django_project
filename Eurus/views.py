@@ -76,4 +76,4 @@ def eurus(request):
     return render(request,'Eurus/eurus.html')
 
 def cal(request):
-    return render(request, 'Eurus/calender.html',{'title':'Calendar'})
+    return render(request, 'Eurus/calendar.html',{'title':'Calendar'})
