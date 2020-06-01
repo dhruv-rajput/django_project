@@ -132,6 +132,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('USER_EMAIL')
 EMAIL_HOST_PASSWORD = os.environ.get('USER_PASS')
+DEFAULT_FROM_EMAIL = 'Eurus <noreply@eurus.com'
 
 AWS_ACCESS_KEY_ID = os.environ.get('USER_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('USER_SECRET_ACCESS_KEY')
